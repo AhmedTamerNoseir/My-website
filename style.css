@@ -1,0 +1,352 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #222831;
+  color: #eeeeee;
+  overflow-x: hidden; /* لمنع ظهور شريط التمرير الأفقي */
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+header .logo {
+  width: 180px;
+  height: auto;
+  display: block;
+  filter: brightness(0) invert(1);
+}
+
+.navigation ul {
+  display: flex;
+  list-style-type: none;
+  gap: 1.5rem;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #eeeeee;
+  transition: color 0.3s;
+}
+
+.navigation a:hover {
+  color: #00adb5;
+}
+
+hr {
+  opacity: 0.1;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
+  margin: 4rem auto;
+  max-width: 1200px;
+  position: relative;
+}
+
+.arrow {
+  position: absolute;
+  top: -2rem;
+  left: -2rem;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.name {
+  font-size: 2.5rem;
+  color: #eeeeee;
+}
+
+.title {
+  font-size: 3rem;
+  color: #00adb5;
+  line-height: 1.2;
+}
+
+.heroImg {
+  max-width: 450px;
+  width: 100%;
+  height: auto;
+}
+
+.hero-btn {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.contact-btn {
+  background-color: #00adb5;
+  color: #eeeeee;
+  border-radius: 24px;
+  text-decoration: none;
+  padding: 0.6rem 1.8rem;
+  font-weight: 600;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s;
+}
+
+.contact-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* About Me Section */
+.aboutMe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
+  margin: 5rem auto;
+  max-width: 1200px;
+  gap: 4rem;
+}
+
+.aboutMeImg {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.aboutMe-text {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.8rem;
+}
+
+.aboutme {
+  color: #eeeeee;
+}
+
+.abouttitle {
+  color: #00adb5;
+}
+
+.bulb {
+  width: 30px;
+}
+
+.aboutMe-p {
+  text-align: justify;
+  color: rgba(238, 238, 238, 0.75);
+  line-height: 1.6;
+}
+
+/* Works Section (المُكبّر والبارز) */
+.works {
+  background-image: url("background.svg");
+  background-size: cover;
+  background-position: center;
+  padding: 7rem 1.5rem;
+  margin: 6rem 0;
+}
+
+.worksContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin: 0 auto;
+  max-width: 1300px;
+}
+
+.projectTitle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 2.3rem;
+}
+
+.works ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.works li {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background-color: rgba(57, 62, 70, 0.5);
+  backdrop-filter: blur(6px);
+  padding: 3rem 2rem;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.works li img {
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.works li img:hover {
+  transform: scale(1.15);
+}
+
+/* Contact Section */
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  padding: 0 1.5rem;
+  margin: 4rem auto;
+  max-width: 1200px;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.contact h3,
+.contact a {
+  color: #eeeeee;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.emailAndPhone {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.emailAndPhone img {
+  width: 20px;
+}
+
+.socialMedia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.socialMedia a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgba(57, 62, 70, 0.5);
+  backdrop-filter: blur(4px);
+  padding: 0.8rem;
+  transition: background-color 0.3s;
+}
+
+.socialMedia a:hover {
+  background-color: #00adb5;
+}
+
+.socialMedia img {
+  width: 24px;
+  height: 24px;
+}
+
+footer {
+  padding: 2rem 1.5rem;
+  text-align: center;
+  color: #eeeeee;
+}
+
+/* ==========================================
+   Media Queries (Responsive Breakpoints)
+   ========================================== */
+
+/* Tablet Screens (Below 992px) */
+@media (max-width: 992px) {
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .hero-text {
+    align-items: center;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .aboutMe {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .aboutMe-text {
+    justify-content: center;
+  }
+
+  .aboutMe-p {
+    text-align: center;
+  }
+}
+
+/* Mobile Screens (Below 600px) */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .name {
+    font-size: 1.8rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .works ul {
+    flex-direction: column;
+  }
+
+  .works li {
+    width: 100%;
+  }
+
+  .contact {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
